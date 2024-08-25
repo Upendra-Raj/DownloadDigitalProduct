@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Product Download</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Download Button -->
+  <button id="downloadBtn" class="download-btn">DOWNLOAD</button>
+
+  <!-- Modal -->
+  <div id="formWrapper" class="form-wrapper">
+    <div id="formModal" class="modal">
+      <div class="modal-content animate-container">
+        <span class="close">&times;</span>
+        <form id="contactForm">
+          <h2 class="animate-item">Contact Form</h2>
+          <label for="firstName" class="animate-item">First Name</label>
+          <input type="text" id="firstName" name="firstName" class="animate-item" required />
+
+          <label for="lastName" class="animate-item">Last Name</label>
+          <input type="text" id="lastName" name="lastName" class="animate-item" required />
+
+          <label for="city" class="animate-item">City</label>
+          <input type="text" id="city" name="city" class="animate-item" required />
+
+          <label for="country" class="animate-item">Country</label>
+          <input type="text" id="country" name="country" class="animate-item" required />
+
+          <label for="contactNumber" class="animate-item">Contact Number</label>
+          <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" class="animate-item" required />
+
+          <label for="companyName" class="animate-item">Company Name</label>
+          <input type="text" id="companyName" name="companyName" class="animate-item" required />
+
+          <button type="submit" class="animate-item">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Link (hidden initially) -->
+  <a id="downloadLink" href="#" download style="display: none;">Download Your File</a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
